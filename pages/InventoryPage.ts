@@ -27,5 +27,6 @@ export class InventoryPage {
 
   async openCart() {
     await this.cartLink.click();
+    await expect(this.page).toHaveURL(/cart\.html/);
   }
 }
